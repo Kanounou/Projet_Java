@@ -1,8 +1,13 @@
+import java.util.Scanner;
+
 public class Voiture {
     //Attributs
      String marque;
      String modele;
      String couleur;
+     public static String coloAutorized = {"Rouge", "Bleu", "Vert", "Blanc", "Noir"};
+
+
     //Methodes
     void demarrer(){
         System.out.println("La voiture demarre");

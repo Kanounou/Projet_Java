@@ -1,16 +1,24 @@
+
+import java.util.Scanner;
+
 public class main {
 
     public static void main(String[] args) {
-        //*creation de la voiture poo et la demarrer*/
-        
-        Voiture voiture = new Voiture();
-        voiture.marque = "Peugeot";
-        voiture.modele = "Clio";
-        voiture.couleur = "Rouge";
+        boolean found = false;
+        for(String color: Voiture.coloAutorized){
+            if(color.equals("couleur")){
+                found = true;
+                break;
+            }
+        }
+if (found){
+      Voiture voiture = new Voiture("Toyota", "Corolla", "Bleu");
 
-        voiture.demarrer();
+      System.out.println("Voiture : " + voiture.getMarque() + " " + voiture.getModele() + " " + voiture.getCouleur());
          
 
+    }else{
+        System.out.println("Couleur non trouvée");
     }
-
+}
 }
