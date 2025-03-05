@@ -83,10 +83,10 @@ public class Main {
                     main.SupprimerEtudiant();
                     break;
                 case 4:
-                    System.out.println("Au revoir !");
+                    System.out.println("A bientot !");
                     break;
                 default:
-                    System.out.println("Choix invalide. Veuillez réessayer.");
+                    System.out.println("Choix invalide !");
                     break;
             }
         }
