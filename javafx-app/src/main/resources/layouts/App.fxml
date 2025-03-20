@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" spacing="10" alignment="CENTER" fx:controller="com.example.MenuController">
+    <Label fx:id="messageLabel" text="Gestion des Utilisateurs" />
+
+    <Button fx:id="addButton" text="Ajouter Utilisateur" onAction="#handleAddUser"/>
+    <Button fx:id="listButton" text="Lister Utilisateurs" onAction="#handleListUsers"/>
+    <Button fx:id="updateButton" text="Modifier Utilisateur" onAction="#handleUpdateUser"/>
+    <Button fx:id="deleteButton" text="Supprimer Utilisateur" onAction="#handleDeleteUser"/>
+    <Button fx:id="searchButton" text="Rechercher Utilisateur" onAction="#handleSearchUser"/>
+</VBox>
